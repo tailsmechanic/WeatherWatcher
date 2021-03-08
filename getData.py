@@ -6,6 +6,7 @@ city = "Sanger"
 compbase = f"{base}appid={apikey}&q={city}"
 resp = requests.get(compbase)
 x = resp.json()
+clear()
 if x["cod"] != "404":
     y = x["main"]
     w = x["wind"]
