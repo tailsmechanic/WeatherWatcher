@@ -2,7 +2,7 @@ import requests, json
 
 apikey = "7cb9becaea566cc27d69991c345fa129"
 base = "http://api.openweathermap.org/data/2.5/weather?"
-city = "Sanger"
+city = "Austin"
 compbase = f"{base}appid={apikey}&q={city}"
 resp = requests.get(compbase)
 x = resp.json()
